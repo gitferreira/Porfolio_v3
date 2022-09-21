@@ -1,0 +1,27 @@
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5rem 3rem 5rem;
+
+}
+
+.footer_left h3 {
+    -webkit-transform: rotate(90deg);
+    color: var(--blanco);
+    display: block;
+    margin-top: 50px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+
+}
+
+.footer_right li {
+    list-style: none;
+    color: var(--blanco);
+    font-size: 2.5rem;
+    
+}

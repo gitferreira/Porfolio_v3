@@ -4,12 +4,14 @@
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding:0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image:url(../public/img/inigo.png);
+  background-size: cover;
 }
 
 .footer {
@@ -126,4 +128,35 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+/* ---------------------------------------------------------------------- */
+
+.main_text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  color: var(--blanco);
+}
+
+.main_text h1 {
+  font-size: 7rem;
+}
+
+.main_text h2 {
+  font-size: var(--typewrite-font-size);
+  font-weight: 400;
+}
+
+.typewrite_text { 
+  display: flex;
+  flex-direction: row;
+}
+
+.signature_container {
+  max-width: 100rem;
+  max-height: 100rem;
+  padding: 1rem;
 }
