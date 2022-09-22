@@ -4,13 +4,13 @@
 
 .main {
   min-height: 100vh;
-  padding:0;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image:url(../public/img/inigo.png);
+  background-image: url(../public/img/inigo.png);
   background-size: cover;
 }
 
@@ -139,24 +139,133 @@
   text-align: center;
   align-items: center;
   color: var(--blanco);
+  z-index: 1;
+  cursor: pointer;
 }
 
-.main_text h1 {
-  font-size: 7rem;
+.center_text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 13rem;
+	overflow: hidden;
+	transition: 0.5s;
+  z-index: 1;
+
 }
+
+
+.center_text:nth-child(1){
+	filter: hue-rotate(0deg);
+}
+
+.center_text:nth-child(3){
+	filter: hue-rotate(360deg);
+}
+
+.center_text:hover {
+	box-shadow: 0 0 50px #21ebff;
+	transition-delay: 0.5s;
+}
+
+/* .center_text:hover .main_text {
+  color: #ffffff;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(49, 214, 192, 0.6) 30%, rgb(22, 239, 255) 50%, rgba(8, 171, 177, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+} */
+
+.center_text:hover img {
+  color: #ffffff;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(49, 214, 192, 0.6) 30%, rgb(22, 239, 255) 50%, rgba(8, 171, 177, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.center_text:before{
+	content: "";
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	border-top: 4px solid #21ebff;
+	border-left: 4px solid #21ebff;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.center_text:hover:before{
+	width: 100%;
+	height: 100%;
+	transition-delay: 0s;
+}
+
+.center_text:after {
+	content: "";
+	position:absolute;
+	bottom:0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	border-bottom: 4px solid #21ebff;
+	border-right: 4px solid #21ebff;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+}
+
+.center_text:hover:after {
+	width: 100%;
+	height: 100%;
+	transition-delay: 0s;
+}
+
+
+
+
+
+.main_text h1 {
+  font-size: 10rem;
+  transition: 1.5s;
+}
+
+
+
+
 
 .main_text h2 {
   font-size: var(--typewrite-font-size);
   font-weight: 400;
 }
 
-.typewrite_text { 
+.typewrite_text {
   display: flex;
   flex-direction: row;
+  transition: 1s;
 }
 
 .signature_container {
   max-width: 100rem;
   max-height: 100rem;
+  margin-top: 1rem;
   padding: 1rem;
+
+}
+
+.typewrite_text:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }

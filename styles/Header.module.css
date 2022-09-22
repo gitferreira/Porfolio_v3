@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    margin-right: 5rem ;
+    margin-top: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+
+.header a {
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 1.1rem 1.1rem;
+    font-size: 1.6rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.header a:hover {
+    background-color:  #03e9f4;
+    color: var(--negro);
+}
+

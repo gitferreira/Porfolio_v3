@@ -9,10 +9,11 @@ const Header = () => {
    
 
             <nav className={styles.navigation}>
-                <Link href="/">Home</Link>
-                <Link href="/aboutUs">About Us</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/shop">Shop</Link>
+                <Link href="/">About</Link>
+                <Link href="/aboutUs">Resume</Link>
+                <Link href="/blog">Portfolio</Link>
+                <Link href="/shop">Blog</Link>
+                <Link href="/shop">Contact</Link>
 
             </nav>
            </div>

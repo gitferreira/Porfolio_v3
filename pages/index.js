@@ -5,6 +5,7 @@ import Signature from "../components/Signature";
 import Fog from "../components/Fog";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import SignatureImage from "../components/SignatureImage";
 
 
 export default function Home() {
@@ -20,9 +21,18 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <Header />
+
+      {/* Fog Component needs to go on top of other elements but Signature, to allow hovering. */}
+      
+      <div className={styles.center_text}> 
       <Signature />
+      <SignatureImage />
+      </div>
       <Fog />
+
+     
+      <Header />
+      
       <Footer />
           </main>
           
