@@ -8,11 +8,15 @@
 
 }
 
+.navigation {
+    display: flex;
+}
+
 
 .header a {
     text-decoration: none;
     color: var(--blanco);
-    padding: 1.1rem 1.1rem;
+    padding: 0.7rem 1.1rem;
     font-size: 1.6rem;
     transition-property: background-color;
     transition-duration: .3s;
@@ -23,3 +27,18 @@
     color: var(--negro);
 }
 
+.resume_button {
+    background-color:  #03e9f4;
+    color: var(--negro) !important;
+    transition-property: background-color;
+    transition-duration: .6s;
+    border: solid 1px #03e9f4;
+   
+}
+
+.resume_button:hover {
+    background-color: var(--negro) !important;
+    color: var(--blanco) !important;
+    border: solid 1px #03e9f4;
+
+}

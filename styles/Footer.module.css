@@ -11,7 +11,7 @@
 
 .footer_left h3 {
     -webkit-transform: rotate(90deg);
-    color:#21ebff;
+    color:var(--neon);
     display: block;
     margin-top: 50px;
     text-transform: uppercase;

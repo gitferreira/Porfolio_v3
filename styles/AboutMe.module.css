@@ -1,0 +1,13 @@
+.description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+
+.image_container {
+    grid-column: 1 / 2;
+}
+
+.text_container {
+    grid-column: 2 / 4;
+}

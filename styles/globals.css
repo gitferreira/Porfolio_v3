@@ -2,6 +2,7 @@
   --primary: #e99401;
   --negro: #262626;
   --blanco: #FFF;
+  --neon: #21ebff;
   --fuente-principal: "Poppins", sans-serif;
   --typewrite-font-size: 4.5rem;
 }
@@ -206,7 +207,7 @@ img {
 
 /* FOG-------------------- */
 
-.fogwrapper {
+.fog_wrapper {
   height: 100%;
   position: absolute;
   top: 0;
@@ -372,4 +373,3 @@ img {
 
 
 
-  

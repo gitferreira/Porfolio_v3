@@ -6,9 +6,22 @@ import Fog from "../components/Fog";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SignatureImage from "../components/SignatureImage";
+import { useState, useEffect } from "react";
+
+
+
 
 
 export default function Home() {
+
+const [centerText, setCenterText] = useState(false)
+console.log(centerText)
+useEffect(() => {
+  setCenterText(true)
+},[])
+
+console.log(centerText)
+
   return (
   
     <main className={styles.main}>
@@ -24,7 +37,7 @@ export default function Home() {
 
       {/* Fog Component needs to go on top of other elements but Signature, to allow hovering. */}
       
-      <div className={styles.center_text}> 
+      <div className={`${styles.center_text} ${centerText ? `${styles.center_text_hover}` : ""}`} > 
       <Signature />
       <SignatureImage />
       </div>

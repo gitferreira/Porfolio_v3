@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem;
+}
+
+.container p {
+    font-size: 1.8rem;
+}
+
+.container h1 {
+    color: var(--blanco);
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+/* Bar Animation */
+
+.animated_bar {
+    background-color: var(--neon);
+    content: '';
+    display: block;
+    height: 4px;
+    left: 0;
+    margin: 0 auto 0 auto;
+    position: relative;
+    right: 0;
+    width: 75px;
+  }
+
+  .animated_bar:before,.animated_bar:after{
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: barAnimation;
+    -webkit-animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: barAnimation;
+    animation-timing-function: linear;
+    background-color: #101010;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 4px;
+  }
+
+  .animated_bar:before {
+    left: 8px;
+  }
+
+  .animated_bar:after {
+    left: 0;
+  }
+
+  @-webkit-keyframes barAnimation {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    to {
+      -webkit-transform: translateX(75px);
+      transform: translateX(75px);
+    }
+  }
+  
+  @keyframes barAnimation {
+    from {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    to {
+      -webkit-transform: translateX(75px);
+      transform: translateX(75px);
+    }
+  }
