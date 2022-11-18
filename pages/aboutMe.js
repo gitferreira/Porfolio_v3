@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/AboutMe.module.css";
 import SectionTitle from "../components/SectionTitle";
 import Link from "next/link";
+import { currentAge } from "../helpers";
 
 const aboutMe = () => {
   return (
@@ -36,14 +37,15 @@ const aboutMe = () => {
               </div>
               <div className={styles.age}>
                 <p>
-                  <strong>Age: </strong>26
+                  <strong>Age: </strong> {currentAge()}
                 </p>
               </div>
             </div>
             <div className={styles.second_block}>
               <div className={styles.email}>
                 <p>
-                  <strong>Email: </strong> <a href="mailto:emma@example.com">iniferre96@gmail.com </a>
+                  <strong>Email: </strong>{" "}
+                  <a href="mailto:emma@example.com">iniferre96@gmail.com </a>
                 </p>
               </div>
               <div className={styles.location}>
@@ -53,9 +55,23 @@ const aboutMe = () => {
               </div>
             </div>
           </div>
-          <div className={styles.buttons_section}>
-          <Link href="#">Download CV</Link>
-
+          <div className={styles.links_section}>
+            <div className={styles.buttons_section}>
+              <Link href="#">Download CV</Link>
+            </div>
+            <ul class="list-unstyled list-inline content-follow">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/i%C3%B1igo-ferreira/">
+                  <i class="icon ion-logo-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/gitferreira">
+                  {" "}
+                  <i class="icon ion-logo-github"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

@@ -43,8 +43,47 @@
     color: var(--neon);
 }
 
+.links_section {
+	display: flex;
+	margin-top: 5rem;
+}
+
+.links_section ul {
+	list-style-type: none;
+	-ms-flex-align: center;
+	align-items: center;
+	display: inline-block;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 100%;
+	margin-bottom: 0;
+}
+
+.links_section ul::before {
+	background-color: rgba(255, 255, 255, 0.25);
+	content: '';
+	height: 2px;
+	margin-right: 23px;
+	width: 60px;
+}
+
+.links_section ul li {
+	padding: 0 1.5rem;
+	font-size: 2.7rem;
+	
+}
+
+.links_section ul li a {
+	color:#cecece; ;
+}
+
+.links_section ul li a:hover {
+	color: var(--neon); ;
+}
+
 .buttons_section {
-    margin-top: 5rem;
+
+	margin-right: 3rem;
 }
 
 
