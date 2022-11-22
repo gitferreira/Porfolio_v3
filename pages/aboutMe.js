@@ -1,10 +1,14 @@
 import Image from "next/image";
 import styles from "../styles/AboutMe.module.css";
 import SectionTitle from "../components/SectionTitle";
+import Techstack from "../components/Techstack";
 import Link from "next/link";
 import { currentAge } from "../helpers";
+import { Modal } from "react-overlays";
+
 
 const aboutMe = () => {
+  
   return (
     <main className="contenedor">
       <SectionTitle />
@@ -74,6 +78,12 @@ const aboutMe = () => {
             </ul>
           </div>
         </div>
+        
+      </section>
+      <section className={styles.tech}>
+        <p>Some of the Technologies I work with</p>
+        <h2>Tech Stack</h2>
+      <Techstack />
       </section>
     </main>
   );

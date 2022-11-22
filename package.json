@@ -17,6 +17,8 @@
     "react": "18.2.0",
     "react-animate-height": "^3.0.4",
     "react-dom": "18.2.0",
+    "react-modal": "^3.16.1",
+    "react-overlays": "^5.2.1",
     "react-spinners": "^0.13.5",
     "typewriter-effect": "^2.19.0"
   },
