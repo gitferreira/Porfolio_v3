@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Techstack.module.css";
+import ModalExample from "./Modal";
 
 const Techstack = () => {
   return (
@@ -89,9 +90,7 @@ const Techstack = () => {
         </div>
       </div>
       <div className={styles.tech_list}>
-      <div className={styles.buttons_section}>
-              <Link href="#">Check Full List</Link>
-            </div>
+        <ModalExample />
       </div>
     </div>
   );

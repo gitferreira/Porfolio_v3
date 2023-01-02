@@ -16,12 +16,12 @@ html {
   padding: 0;
 }
 body {
-  background-color: #111;
+  background-color: #111; 
   color: #9f9f9f;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.95;
-
+  overflow:scroll;
   position: relative;
   font-family: var(--fuente-principal);
 

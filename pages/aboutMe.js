@@ -2,9 +2,10 @@ import Image from "next/image";
 import styles from "../styles/AboutMe.module.css";
 import SectionTitle from "../components/SectionTitle";
 import Techstack from "../components/Techstack";
+import References from "../components/References";
 import Link from "next/link";
 import { currentAge } from "../helpers";
-import { Modal } from "react-overlays";
+
 
 
 const aboutMe = () => {
@@ -25,7 +26,7 @@ const aboutMe = () => {
         </div>
         <div className={styles.text_container}>
           <h2>Who am I?</h2>
-          <h1>I'm Íñigo Ferreira, a Coding Lover & Web Developer</h1>
+          <h1>I am Íñigo Ferreira, a Coding Lover & Web Developer</h1>
           <p>
             I love the principles of responsiveness and the oddly satisfying
             feeling when watching websites shrink into mobile screens to still
@@ -84,6 +85,11 @@ const aboutMe = () => {
         <p>Some of the Technologies I work with</p>
         <h2>Tech Stack</h2>
       <Techstack />
+      </section>
+      <section className={styles.references}>
+        <p>Some of the nice things previous employers said :) </p>
+        <h2>References</h2>
+      <References />
       </section>
     </main>
   );
