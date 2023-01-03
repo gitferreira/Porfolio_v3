@@ -1,0 +1,35 @@
+.container {
+    border-bottom: 2px solid transparent;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    padding: 38px 42px;
+    transition: all 0.15s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: var(--blackish);
+
+}
+
+.container:hover {
+    border-bottom: 2px solid var(--neon);
+}
+
+.title_container {
+display: flex;
+flex-direction: row;
+
+justify-content: space-between;
+}
+
+.employer_details {
+    line-height: 2.2rem;
+}
+.employer_name {
+    font-weight: 600;
+    color: var(--blanco);
+}
+
+.employer_ocupation {
+    font-style: italic;
+}

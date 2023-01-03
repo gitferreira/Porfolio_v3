@@ -1,8 +1,9 @@
 :root {
   --primary: #e99401;
   --negro: #262626;
-  --blanco: #FFF;
+  --blanco: #fff;
   --neon: #21ebff;
+  --blackish:  rgba(0, 0, 0, 0.253);
   --fuente-principal: "Poppins", sans-serif;
   --typewrite-font-size: 4.5rem;
 }
@@ -10,21 +11,22 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #111; 
+  background-color: #111;
   color: #9f9f9f;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.95;
-  overflow:scroll;
+  overflow: scroll;
   position: relative;
   font-family: var(--fuente-principal);
-
 }
 img {
   max-width: 100%;
@@ -42,7 +44,6 @@ img {
   color: var(--primary);
   margin: 5rem 0;
 }
-
 
 /* --------------------------------------------------------------------- */
 
@@ -92,7 +93,7 @@ img {
   margin-bottom: 0;
 }
 
-.home-area .fixed-wrapper .social-icons>li {
+.home-area .fixed-wrapper .social-icons > li {
   line-height: 100%;
   margin-top: 14px;
   text-align: center;
@@ -129,7 +130,7 @@ img {
 
 .home-area .home-headline .single-headline::after {
   background-color: #b9b9b9;
-  content: '';
+  content: "";
   height: 100%;
   position: absolute;
   right: 0;
@@ -154,7 +155,7 @@ img {
 
 .home-area.video-variant #wrapper_homeVideo:before {
   background-color: rgba(0, 0, 0, 0.7);
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
   position: absolute;
@@ -215,161 +216,357 @@ img {
   -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
   filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
 }
-#foglayer_01, #foglayer_02, #foglayer_03 {
+#foglayer_01,
+#foglayer_02,
+#foglayer_03 {
   height: 100%;
   position: absolute;
   width: 200%;
 }
-#foglayer_01 .image01, #foglayer_01 .image02,
-#foglayer_02 .image01, #foglayer_02 .image02,
-#foglayer_03 .image01, #foglayer_03 .image02 {
+#foglayer_01 .image01,
+#foglayer_01 .image02,
+#foglayer_02 .image01,
+#foglayer_02 .image02,
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
   float: left;
   height: 100%;
   width: 50%;
 }
 #foglayer_01 {
-  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
-  -moz-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
-  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -webkit-animation: foglayer_01_opacity 10s linear infinite,
+    foglayer_moveme 15s linear infinite;
+  -moz-animation: foglayer_01_opacity 10s linear infinite,
+    foglayer_moveme 15s linear infinite;
+  animation: foglayer_01_opacity 10s linear infinite,
+    foglayer_moveme 15s linear infinite;
 }
-#foglayer_02, #foglayer_03 {
-  -webkit-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
-  -moz-animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
-  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite;
+#foglayer_02,
+#foglayer_03 {
+  -webkit-animation: foglayer_02_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
+  -moz-animation: foglayer_02_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
+  animation: foglayer_02_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
 }
 
 /* ---------- Moving Fog ---------- */
 
-#foglayer_01 .image01, #foglayer_01 .image02 {
-  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png") center center/cover no-repeat transparent;
-
+#foglayer_01 .image01,
+#foglayer_01 .image02 {
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog1.png")
+    center center/cover no-repeat transparent;
 }
-#foglayer_02 .image01, #foglayer_02 .image02,
-#foglayer_03 .image01, #foglayer_03 .image02{
-  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png") center center/cover no-repeat transparent;
-
+#foglayer_02 .image01,
+#foglayer_02 .image02,
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+  background: url("https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog2.png")
+    center center/cover no-repeat transparent;
 }
 
 /* ---------- Keyframe Layer 1 ---------- */
 @-webkit-keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
+  0% {
+    opacity: 0.1;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.28;
+  }
+  58% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.16;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 @-moz-keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
+  0% {
+    opacity: 0.1;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.28;
+  }
+  58% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.16;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 @-o-keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
+  0% {
+    opacity: 0.1;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.28;
+  }
+  58% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.16;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 @keyframes foglayer_01_opacity {
-  0% { opacity: .1; }
-  22% { opacity: .5; }
-  40% { opacity: .28; }
-  58% { opacity: .4; }
-  80% { opacity: .16; }
-  100% { opacity: .1; }
+  0% {
+    opacity: 0.1;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.28;
+  }
+  58% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.16;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 /* ---------- Keyframe Layer 2 ---------- */
 @-webkit-keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 @-moz-keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 @-o-keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 @keyframes foglayer_02_opacity {
-  0% { opacity: .5; }
-  25% { opacity: .2; }
-  50% { opacity: .1; }
-  80% { opacity: .3; }
-  100% { opacity: .5; }
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 /* ---------- Keyframe Layer 3 ---------- */
 @-webkit-keyframes foglayer_03_opacity {
-  0% { opacity: .8 }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
+  0% {
+    opacity: 0.8;
+  }
+  27% {
+    opacity: 0.2;
+  }
+  52% {
+    opacity: 0.6;
+  }
+  68% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 @-moz-keyframes foglayer_03_opacity {
-  0% { opacity: .8 }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
+  0% {
+    opacity: 0.8;
+  }
+  27% {
+    opacity: 0.2;
+  }
+  52% {
+    opacity: 0.6;
+  }
+  68% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 @-o-keyframes foglayer_03_opacity {
-  0% { opacity: .8 }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
+  0% {
+    opacity: 0.8;
+  }
+  27% {
+    opacity: 0.2;
+  }
+  52% {
+    opacity: 0.6;
+  }
+  68% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 @keyframes foglayer_03_opacity {
-  0% { opacity: .8; }
-  27% { opacity: .2; }
-  52% { opacity: .6; }
-  68% { opacity: .3; }
-  100% { opacity: .8; }
+  0% {
+    opacity: 0.8;
+  }
+  27% {
+    opacity: 0.2;
+  }
+  52% {
+    opacity: 0.6;
+  }
+  68% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 /* ---------- Keyframe moveMe ---------- */
 @-webkit-keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
 @-moz-keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
 @-o-keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
 @keyframes foglayer_moveme {
-  0% { left: 0; }
-  100% { left: -100%; }
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
 
-@media only screen
-  and (min-width: 280px)
-  and (max-width: 767px) {
-    #foglayer_01 .image01, #foglayer_01 .image02,
-    #foglayer_02 .image01, #foglayer_02 .image02,
-    #foglayer_03 .image01, #foglayer_03 .image02 {
-      width: 100%;
-    }
+@media only screen and (min-width: 280px) and (max-width: 767px) {
+  #foglayer_01 .image01,
+  #foglayer_01 .image02,
+  #foglayer_02 .image01,
+  #foglayer_02 .image02,
+  #foglayer_03 .image01,
+  #foglayer_03 .image02 {
+    width: 100%;
   }
+}
 
+/* ---------- SWIPER CAROUSEL STYLES ----------- */
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 
+.swiper-slide {
+  text-align: center;
 
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
+.swiper-pagination {
+  bottom: -10px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-icon {
+  color: var(--neon);
+  font-size: 5rem;
+
+}
