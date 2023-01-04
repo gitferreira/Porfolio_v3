@@ -8,11 +8,16 @@ import { currentAge } from "../helpers";
 
 
 
-const aboutMe = () => {
+const aboutMe = ({}) => {
   
   return (
+
     <main className="contenedor">
-      <SectionTitle />
+      <SectionTitle
+      preheading= "Get to know me"
+        heading = "About Me"
+      
+      />
 
       <section className={styles.description}>
         <div className={styles.image_container}>
@@ -92,6 +97,7 @@ const aboutMe = () => {
       <References />
       </section>
     </main>
+  
   );
 };
 

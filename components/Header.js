@@ -8,7 +8,7 @@ const Header = () => {
            <div className={styles.bar}>
             <nav className={styles.navigation}>
                 <Link href="/aboutMe">About</Link>
-                <Link  href="/aboutU"><a className={styles.resume_button}>Resume </a></Link>
+                <Link  href="/resume"><a className={styles.resume_button}>Resume </a></Link>
                 <Link href="/blog">Portfolio</Link>
                 <Link href="/shop">Blog</Link>
                 <Link href="/shop">Contact</Link>

@@ -6,6 +6,7 @@
   --blackish:  rgba(0, 0, 0, 0.253);
   --fuente-principal: "Poppins", sans-serif;
   --typewrite-font-size: 4.5rem;
+  --swiper-theme-color: #21ebff !important;
 }
 html {
   font-size: 62.5%;
@@ -24,7 +25,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.95;
-  overflow: scroll;
+  overflow: auto;
   position: relative;
   font-family: var(--fuente-principal);
 }
@@ -555,9 +556,12 @@ img {
   align-items: center;
 }
 
-.swiper-pagination {
-  bottom: -10px;
-}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -10px !important;
+  left: 0;
+  width: 100%;
+  color: #21ebff;
+} 
 .swiper-slide img {
   display: block;
   width: 100%;

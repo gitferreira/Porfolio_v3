@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import styles from "../styles/References.module.css";
 
-
 const References = () => {
   return (
     <>
@@ -25,83 +24,96 @@ const References = () => {
       >
         <SwiperSlide>
           <div className={styles.container}>
-            <div className={styles.title_container}> 
-          <div className={styles.employer_details}>
-            <p className={styles.employer_name}>Andreia Mendes</p>
-            <p className={styles.employer_ocupation}>Innovation Consultant</p>
-          </div>
-          <i class="icon ion-md-quote review-icon"></i>
-          </div>
-          <p>
-            Iñigo consistently delivered beyond expectations, actively
-            contributing to innovative strategies and the development of SERN.
-            Through his willingness to learn, we successfully met several
-            deadlines on the expected deliverables of our projects and expanded
-            our Network. We can say he was a key element to maintain our
-            communication channels and helping us pursue the overall goals of
-            SERN.
-          </p>
+            <div className={styles.title_container}>
+              <div className={styles.employer_details}>
+                <p className={styles.employer_name}>Andreia Mendes</p>
+                <p className={styles.employer_ocupation}>
+                  Innovation Consultant
+                </p>
+              </div>
+              <i class="icon ion-md-quote review-icon"></i>
+            </div>
+            <p>
+              Iñigo consistently delivered beyond expectations, actively
+              contributing to innovative strategies and the development of SERN.
+              Through his willingness to learn, we successfully met several
+              deadlines on the expected deliverables of our projects and
+              expanded our Network. We can say he was a key element to maintain
+              our communication channels and helping us pursue the overall goals
+              of SERN.
+            </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide>          <div className={styles.container}>
-            <div className={styles.title_container}> 
-          <div className={styles.employer_details}>
-            <p className={styles.employer_name}>Andreia Mendes</p>
-            <p className={styles.employer_ocupation}>Innovation Consultant</p>
+        <SwiperSlide>
+          {" "}
+          <div className={styles.container}>
+            <div className={styles.title_container}>
+              <div className={styles.employer_details}>
+                <p className={styles.employer_name}>Idoia Iturbe</p>
+                <p className={styles.employer_ocupation}>
+                  Managing Director
+                </p>
+              </div>
+              <i class="icon ion-md-quote review-icon"></i>
+            </div>
+            <p>
+              It has been a pleasure working with Iñigo. He has shown a lot of
+              creativity, self-management skills, an open attitude to keep
+              learning, attention to detail in the reports that he has had to
+              develop, knowledge of digital marketing and above all a great
+              camaraderie during the months he has been in Demium. Having him
+              has been a pleasure and I wish him the best in his future career
+              opportunities.
+            </p>
           </div>
-          <i class="icon ion-md-quote review-icon"></i>
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <div className={styles.container}>
+            <div className={styles.title_container}>
+              <div className={styles.employer_details}>
+                <p className={styles.employer_name}>Andreia Mendes</p>
+                <p className={styles.employer_ocupation}>
+                  Innovation Consultant
+                </p>
+              </div>
+              <i class="icon ion-md-quote review-icon"></i>
+            </div>
+            <p>
+              Iñigo consistently delivered beyond expectations, actively
+              contributing to innovative strategies and the development of SERN.
+              Through his willingness to learn, we successfully met several
+              deadlines on the expected deliverables of our projects and
+              expanded our Network. We can say he was a key element to maintain
+              our communication channels and helping us pursue the overall goals
+              of SERN.
+            </p>
           </div>
-          <p>
-            Iñigo consistently delivered beyond expectations, actively
-            contributing to innovative strategies and the development of SERN.
-            Through his willingness to learn, we successfully met several
-            deadlines on the expected deliverables of our projects and expanded
-            our Network. We can say he was a key element to maintain our
-            communication channels and helping us pursue the overall goals of
-            SERN.
-          </p>
-          </div></SwiperSlide>
-        <SwiperSlide>          <div className={styles.container}>
-            <div className={styles.title_container}> 
-          <div className={styles.employer_details}>
-            <p className={styles.employer_name}>Andreia Mendes</p>
-            <p className={styles.employer_ocupation} >Innovation Consultant</p>
+        </SwiperSlide>
+        <SwiperSlide>
+          {" "}
+          <div className={styles.container}>
+            <div className={styles.title_container}>
+              <div className={styles.employer_details}>
+                <p className={styles.employer_name}>Andreia Mendes</p>
+                <p className={styles.employer_ocupation}>
+                  Innovation Consultant
+                </p>
+              </div>
+              <i class="icon ion-md-quote review-icon"></i>
+            </div>
+            <p>
+              Iñigo consistently delivered beyond expectations, actively
+              contributing to innovative strategies and the development of SERN.
+              Through his willingness to learn, we successfully met several
+              deadlines on the expected deliverables of our projects and
+              expanded our Network. We can say he was a key element to maintain
+              our communication channels and helping us pursue the overall goals
+              of SERN.
+            </p>
           </div>
-          <i class="icon ion-md-quote review-icon"></i>
-          </div>
-          <p>
-            Iñigo consistently delivered beyond expectations, actively
-            contributing to innovative strategies and the development of SERN.
-            Through his willingness to learn, we successfully met several
-            deadlines on the expected deliverables of our projects and expanded
-            our Network. We can say he was a key element to maintain our
-            communication channels and helping us pursue the overall goals of
-            SERN.
-          </p>
-          </div></SwiperSlide>
-        <SwiperSlide>          <div className={styles.container}>
-            <div className={styles.title_container}> 
-          <div className={styles.employer_details}>
-            <p className={styles.employer_name}>Andreia Mendes</p>
-            <p className={styles.employer_ocupation}>Innovation Consultant</p>
-          </div>
-          <i class="icon ion-md-quote review-icon"></i>
-          </div>
-          <p>
-            Iñigo consistently delivered beyond expectations, actively
-            contributing to innovative strategies and the development of SERN.
-            Through his willingness to learn, we successfully met several
-            deadlines on the expected deliverables of our projects and expanded
-            our Network. We can say he was a key element to maintain our
-            communication channels and helping us pursue the overall goals of
-            SERN.
-          </p>
-          </div></SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        </SwiperSlide>
+
       </Swiper>
     </>
   );
