@@ -1,10 +1,6 @@
-import styles from '../styles/SectionTitle.module.css'
-
+import styles from "../styles/SectionTitle.module.css";
 
 const SectionTitle = ({ preheading, heading }) => {
-
-  
-    
   return (
     <main className={styles.container}>
       <p className={styles.pre_heading}>{preheading}</p>

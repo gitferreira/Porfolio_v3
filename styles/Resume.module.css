@@ -1,0 +1,13 @@
+
+.custom_contenedor {
+    max-width: 160rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.cards_section {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5rem;
+}
