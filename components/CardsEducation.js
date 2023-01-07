@@ -2,7 +2,7 @@ import styles from "../styles/CardEducation.module.css";
 import Image from "next/image";
 import React from "react";
 
-const CardsEducation = ({image, title, organization, date, description}) => {
+const CardsEducation = ({image, title, organization, date, description, listItem1, listItem2, listItem3, listItem4, listItem5, listItem6}) => {
   return (
     <div>
       <div className={styles.container}>
@@ -17,6 +17,14 @@ const CardsEducation = ({image, title, organization, date, description}) => {
           </div>
           <div className={styles.contentBx}>
             <p>{description}</p>
+            <ul>
+              <li>{listItem1}</li>
+              <li>{listItem2}</li>
+              <li>{listItem3}</li>
+              <li>{listItem4}</li>
+              <li>{listItem5}</li>
+              <li>{listItem6}</li>
+            </ul>
             
           </div>
         </div>

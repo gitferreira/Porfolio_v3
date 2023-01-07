@@ -1,0 +1,83 @@
+
+.skills {
+    display: flex;
+}
+  .container {
+    position: relative;
+    width: 50%;
+    padding: 0px 18px 0 0;
+    box-sizing: border-box;
+    
+  }
+  
+  .loading {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background: #f1f1f1;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 2rem 0;
+  }
+  
+  .loading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    animation: load 5s infinite;
+  }
+  
+  @keyframes load {
+    0% {
+      width: 0;
+      background: var(--neon);
+    }
+    
+    25% {
+      width: 40%;
+      background:var(--neon);
+    }
+    
+    50% {
+      width: 60%;
+      background: var(--neon);
+    }
+    
+    75% {
+      width: 75%;
+      background: var(--neon);
+    }
+    
+    100% {
+      width: 100%;
+      background: var(--neon);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      background: var(--neon);
+    }
+    
+    25% {
+      background: var(--neon);
+    }
+    
+    50% {
+      background: var(--neon);
+    }
+    
+    75% {
+      background: var(--neon);
+    }
+    
+    100% {
+      background: var(--neon);
+    }
+  }

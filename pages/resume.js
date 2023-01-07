@@ -2,16 +2,20 @@ import React from "react";
 import SectionTitle from "../components/SectionTitle";
 import Cards from "../components/Cards";
 import CardsEducation from "../components/CardsEducation";
+import SkillsBar from "../components/SkillsBar";
 import styles from "../styles/Resume.module.css";
+import Link from "next/link";
 
 const resume = ({}) => {
- 
   return (
     <main className={styles.custom_contenedor}>
+
       <SectionTitle
         preheading="Check out what I've been doing!"
         heading="Resume"
       />
+            <div className={styles.cards_container}> 
+      <h2 className={styles.heading}>Experience</h2>
       <section className={styles.cards_section}>
         <Cards
           image="/img/programming.svg"
@@ -43,16 +47,19 @@ const resume = ({}) => {
           description="Support to the Finance and Human Resources departments in an International Corporation of the Industrial Sector."
         />
       </section>
-  
-      <section className={`${styles.cards_section } ${styles.education}`} >
+      <h2 className={styles.heading}>Education</h2>
+      <section className={`${styles.cards_section} ${styles.education}`}>
         <CardsEducation
           image="/img/self-taught.svg"
           title="Other Certifications"
           organization="Self-taught"
           date="2021 - Currently"
-          description={["The Complete Web Developer Course 2.0",
-          "The Complete Web Developer Course 2.0"]}
-          
+          listItem1="React - The Complete Guide."
+          listItem2="React - La Guia Completa."
+          listItem3="Vue - The Complete Guide."
+          listItem4="Desarrollo FullStack MEVN."
+          listItem5="The Complete Sass & SCSS Course."
+          listItem6="Complete C# Masterclass."
         />
         <CardsEducation
           image="/img/ironhack.svg"
@@ -76,6 +83,17 @@ const resume = ({}) => {
           date="2014 - 2018"
           description="Bachellor in BA, specializing in Consulting and Innovation Management."
         />
+      </section>
+      <div className={styles.buttons_section}>
+              <Link href="#">Download CV</Link>
+            </div>
+      </div>
+      <section className="contenedor">
+        <div className={styles.skills}>
+          <p>My level of knowledge with some technologies</p>
+          <h2>Skills</h2>
+          <SkillsBar />
+        </div>
       </section>
     </main>
   );

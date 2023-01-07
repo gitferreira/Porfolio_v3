@@ -149,7 +149,6 @@
   }
 
 
-
 .container .card:hover .titleBx {
     height: 210px;
     color: var(--negro);
@@ -188,4 +187,9 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 10px;
+}
+
+.contentBx ul {
+  list-style: none;
+  line-height: 130%;
 }
