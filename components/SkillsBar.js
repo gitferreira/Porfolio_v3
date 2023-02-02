@@ -6,9 +6,9 @@ const SkillsBar = () => {
     <div className={styles.skills}>
       <div className={styles.container}>
         <p>JavaScript</p>
-        <div className={styles.loading}></div>
+        <div className={styles.loading1}></div>
         <p>JavaScript</p>
-        <div className={styles.loading}></div>
+        <div className={styles.loading2}></div>
         <p>JavaScript</p>
         <div className={styles.loading}></div>
         <p>JavaScript</p>
