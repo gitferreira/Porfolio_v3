@@ -23,7 +23,7 @@ const resume = ({}) => {
           organization="SMART Technologies"
           date="feb. 2021 - Currently | (Remote)"
           description="Active Full Stack Developer at SMART’s Web Development team in
-      Calgary, Canada. (Remotely) – Agile Software Development."
+      Calgary, Canada. (Remotely) – Agile SD."
         />
         <Cards
           image="/img/business.svg"
@@ -89,7 +89,7 @@ const resume = ({}) => {
             </div>
       </div>
       <section className="contenedor">
-        <div className={styles.skills}>
+        <div className={styles.skills_section}>
           <p>My level of knowledge with some technologies</p>
           <h2>Skills</h2>
           <SkillsBar />
