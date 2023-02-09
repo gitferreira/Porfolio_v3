@@ -5,14 +5,16 @@ import Techstack from "../components/Techstack";
 import References from "../components/References";
 import Link from "next/link";
 import { currentAge } from "../helpers";
+import Head from 'next/head'
+
 
 
 
 const aboutMe = ({}) => {
   
   return (
-
-    <main className="contenedor">
+    <main className="custom-body">
+    <div className="contenedor">
       <SectionTitle
       preheading= "Get to know me"
         heading = "About Me"
@@ -96,8 +98,8 @@ const aboutMe = ({}) => {
         <h2>References</h2>
       <References />
       </section>
+    </div>
     </main>
-  
   );
 };
 

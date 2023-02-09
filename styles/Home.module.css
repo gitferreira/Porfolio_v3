@@ -4,7 +4,8 @@
 }
 
 .main {
- height: 100vh;
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   flex: 1;
   display: flex;
@@ -13,6 +14,7 @@
   align-items: center;
   background-image: url(../public/img/inigo.png);
   background-size: cover;
+  overflow: hidden;
 
 }
 
@@ -237,7 +239,7 @@
 
 
 .main_text h1 {
-  font-size: 10rem;
+  font-size: 70px;
   transition: 1.5s;
 }
 

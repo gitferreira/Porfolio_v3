@@ -10,19 +10,3 @@ export const currentAge = () => {
 };
 
 
-function updateSkillsSection() {
-  const skillsSection = document.querySelector(".skills_section");
-  const skillsSectionRect = skillsSection.getBoundingClientRect();
-  const isInViewport = (
-    skillsSectionRect.top >= 0 &&
-    skillsSectionRect.left >= 0 &&
-    skillsSectionRect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    skillsSectionRect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-  if (isInViewport) {
-    // code to update the keyframe and set the width and background color
-    console.log('ajhsdjka')
-  }
-}
-
-export default updateSkillsSection;
